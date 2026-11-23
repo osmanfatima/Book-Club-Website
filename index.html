@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between the Pages | Book Club</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f4ed;
+            color: #44352e;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #5b4038;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #eadbd0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #76584d;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e9c6a8;
+        }
+
+        /* Welcome section */
+        .welcome {
+            text-align: center;
+            padding: 55px 20px;
+            background-color: #eadbd0;
+        }
+
+        .welcome h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .welcome p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        /* Books section */
+        .books-section {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .books-section h2 {
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #806b60;
+            margin-bottom: 30px;
+        }
+
+        .books {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .book {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+        }
+
+        .book img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            margin: 12px 0 5px;
+            color: #5b4038;
+        }
+
+        .book p {
+            font-size: 14px;
+            color: #665750;
+        }
+
+        .genre {
+            color: #a16e55;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* About section */
+        .about {
+            background-color: #eadbd0;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .about h2 {
+            margin-bottom: 12px;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* Quote section */
+        .quote {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .quote p {
+            font-style: italic;
+            font-size: 20px;
+            color: #76584d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #5b4038;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .welcome h2 {
+                font-size: 25px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Between the Pages</h1>
+        <p>For the Love of Books and everything in between.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#books">My Bookshelf</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Welcome section -->
+    <section class="welcome" id="home">
+        <h2>Welcome, Fellow Reader!</h2>
+        <p>
+           Some stories stay with us long after the final page.<br>This is a collection of novels I've loved, stories I've discovered and books I think deserve a place on your shelf!
+        </p>
+    </section>
+
+    <!-- Books section -->
+    <section class="books-section" id="books">
+        <h2>My Bookshelf</h2>
+        <p class="subtitle">A little peek into my reading world.</p>
+
+        <div class="books">
+
+            <div class="book">
+                <img src="/images/Tomorrow I become A Woman.jpeg"
+                     alt="Tomorrow I become A Woman book cover">
+
+                <h3>Tomorrow I become A Woman</h3>
+                <p class="author">By Aiwanose Odafen.</p>
+                <p class="genre">Literary Fiction</p>
+                <p>
+                  A moving story set in Nigeria, following Obianuju (Uju) as she navigates marriage, family expectations and the challenges faced by women in a traditional society. Through friendship, love and difficult experiences, she learns to find her own voice and strength.  
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="/images/A Thousand Splendid Suns.jpeg"
+                     alt="A Thousand Splendid Suns book cover">
+
+                <h3>A Thousand Splendid Suns</h3>
+                <p class="author">By Khaled Hosseini.</p>
+                <p class="genre">Historical Fiction</p>
+                <p>
+A moving story of two Afghan women, Mariam and Laila, whose lives become intertwined through hardship, loss and war. Despite their difficult circumstances, an unexpected friendship grows between them, revealing the strength of love, sacrifice and the human spirit.
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="/images/The Seven Year Slip.jpeg"
+                     alt="The Seven Year Slipbook cover">
+
+                <h3>The Seven Year Slip</h3>
+                <p class="author">By Ashley Poston.</p>
+                <p class="genre">Contemporary Romance | Magical Realism Novel</p>
+                <p>
+                   Clementine is trying to move forward with her life when she discovers something unusual about her late aunt's apartment: it connects two different points in time, seven years apart. When she meets a charming stranger living in the past, an unexpected love story begins. A beautiful tale of love, grief, healing and the importance of timing.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h2>About This Book Club</h2>
+        <p>
+            Between the Pages is my personal reading space. It is where I
+            collect stories I enjoy, share what they are about and encourage
+            other readers to explore the wonderful world of books.
+        </p>
+    </section>
+
+    <!-- Quote section -->
+    <section class="quote">
+        <p>"A reader lives a thousand lives before they die."</p>
+        <p>— George R.R. Martin</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Between the Pages &copy; 2026 | Made with love for readers.</p>
+    </footer>
+
+</body>
+</html>
